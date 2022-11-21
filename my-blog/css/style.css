@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.logo>h3 {
+    color: #0D12A1;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 55px;
+    align-items: center;
+}
+
+.search>label {
+    color: #0D12A1;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 14px;
+}
+
+.search input {
+    padding: 12px;
+    position: relative;
+    width: 250px;
+    border-radius: 12px;
+    border: 2px solid gainsboro;
+    box-shadow: inset 0px 0px 3px 1px rgba(220, 220, 220, .75);
+}
+
+.search ::placeholder {
+    color: #9091D2;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.search .fa-magnifying-glass {
+    background-color: #0D12A1;
+    padding: 10px;
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    right: 63px;
+    top: 21px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.content .text>p {
+    width: 600px;
+    font-size: 25px;
+}
+
+.saya {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: none;
+    background-image: linear-gradient(rgb(7, 7, 150), rgb(19, 192, 250));
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .logo>h3 {
+        font-size: 18px;
+    }
+
+    .search>label {
+        font-size: 18px;
+    }
+
+    .search ::placeholder {
+        font-size: 13px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        min-height: 0;
+        margin-top: 40px;
+    }
+
+    .content .text>p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .search .fa-magnifying-glass {
+        right: 63px;
+    }
+
+    .wrapper-image .saya {
+        height: 250px;
+        border-radius: 125px;
+    }
+
+    .content .text>p {
+        margin-top: 15px;
+    }
+
+    .btn {
+        float: right;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo>h3 {
+        font-size: 15px;
+    }
+
+    .search>label {
+        font-size: 15px;
+    }
+
+    .search ::placeholder {
+        font-size: 12px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        min-height: 0;
+        margin-top: 40px
+    }
+
+    .content .text>p {
+        width: 500px;
+    }
+
+    .wrapper-image .saya {
+        height: 250px;
+        border-radius: 125px;
+    }
+
+    .btn {
+        float: right;
+        cursor: pointer;
+    }
+
+    .search .fa-magnifying-glass {
+        right: 63px;
+    }
+
+    .content .text>p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    nav {
+        padding: 10px 25px;
+    }
+
+    .logo>h3 {
+        font-size: 15px;
+    }
+
+    .search>label {
+        font-size: 15px;
+    }
+
+    .search input {
+        width: 150px;
+    }
+
+    .search ::placeholder {
+        font-size: 12px;
+    }
+
+    .search .fa-magnifying-glass {
+        padding: 7px;
+        right: 33px;
+        top: 20px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        min-height: 0;
+        margin-top: 40px;
+    }
+
+    .wrapper-image .saya {
+        height: 250px;
+        border-radius: 125px;
+    }
+
+    .content .text>p {
+        font-size: 17px;
+        width: 300px;
+        text-align: justify;
+        margin-top: 15px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 8px 22px;
+        border-radius: 8px;
+        float: right;
+    }
+}
